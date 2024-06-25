@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player {
+    background: #1e1e1e;
+    width: 320px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.song-img {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #1db954;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.music-player h1 {
+    font-weight: 600;
+    font-size: 22px;
+    color: #f5f5f5;
+    margin-top: 20px;
+}
+
+.music-player p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #333;
+    padding: 5px;
+    color: #1db954;
+}
+
+#progress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #555;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #1db954;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #1db954;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.controls div:hover {
+    background: #1db954;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.controls div:nth-child(2) {
+    transform: scale(1.3);
+    background: #1db954;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.controls div:nth-child(2):hover {
+    background: #14833b;
+    transform: scale(1.4);
+}
